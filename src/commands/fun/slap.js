@@ -47,7 +47,7 @@ module.exports = class extends BaseCommand {
         return message.channel.send(new Discord.MessageEmbed()
             .setColor(process.env.HEX_COLOR)
             .setImage(slaps[Math.floor(Math.random() * slaps.length)])
-            .setDescription(`${message.author.username} slapped ${user.username}!`)
+            .setDescription(`<@${message.author.id}> slapped <@${user.id}>!`)
         );
     }
 }
