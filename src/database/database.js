@@ -81,7 +81,7 @@ const GuildMember = require("../models/guild/member")(GuildDB, DataTypes);
     Logger.info("Connecting to databases...");
     await UnicronDB.sync({ force: true })
       .then(() => {
-        Logger.info("Unicron Database Synced!");
+        Logger.info("Straw Database Synced!");
         UnicronDB.close();
       })
       .catch(Logger.error);
